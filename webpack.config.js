@@ -17,7 +17,6 @@ module.exports = (env) => {
       filename: isDev ? 'main.js' : '[name].[contenthash].js',
       path: path.resolve(__dirname, 'build'),
       clean: true,
-      assetModuleFilename: 'images/[hash][ext][query]',
     },
     devServer: isDev ? {
       port: 3000,
